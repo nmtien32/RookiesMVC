@@ -1,0 +1,69 @@
+@model List<PersonModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4 mb-3">Rookies List</h1>
+    <div class="text-start mb-2">
+        <a class="btn btn-primary" role="button" asp-controller="Rookies" asp-action="CreateNewPerson">Create new
+            person</a>
+    </div>
+    <table class="table table-striped">
+        <thread>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Fullname</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Date of birth</th>
+                <th scope="col">Birth Place</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thread>
+        <tbody>
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                var person = Model[i];
+                <tr>
+                    <th scope=" row" class="text-start">@(i+1)</th>
+                    <td class="text-start">
+                        <a asp-controller="Rookies" asp-action="Detail" asp-route-index="@i">@person.FullName</a>
+                    </td>
+                    <td>@person.Gender</td>
+                    <td>@person.DateOfBirth.ToString("dd/MM/yyyy")</td>
+                    <td class="text-start">@person.BirthPlace</td>
+                    <td>
+                        <a class="btn btn-primary btn-sm" role="button" asp-controller="Rookies" asp-action="Edit"
+                        asp-route-index="@i">Edit</a>
+                        <a class="btn btn-danger btn-sm" href="#" role="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal_@i">Delete</a>
+                        <div class="modal fade" id="exampleModal_@i" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <form asp-controller="Rookies" asp-action="Delete" asp-route-index="@i" method="post"
+                                    class="col-6 offset-3">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Information</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Are you sure?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                            <button type="submit" class="btn btn-primary">Confirm</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <table>
+</div>

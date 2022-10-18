@@ -1,0 +1,60 @@
+@model PersonDetailModel
+@{
+    ViewData["Title"] = "Update new person";
+    var value = ViewData["Index"]?.ToString() ?? "";
+    var index = !string.IsNullOrEmpty(value) ? int.Parse(value) : 0;
+}
+
+<h1 class="display-4 text-center">Update person</h1>
+<div>
+    <form asp-controller="Rookies" asp-action="Update" asp-route-index="@index" method="post" class="col-6 offset-3">
+        <div class="mb-3">
+            <label asp-for="FirstName"></label>
+            <label class="form-control">@Model.FirstName</label>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="LastName"></label>
+            <label class="form-control">@Model.LastName</label>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Gender"></label>
+            <label class="form-control">@Model.Gender</label>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Phone"></label>
+            <label class="form-control">@Model.Phone</label>
+        </div>
+        <div class="mb-3">
+            <label asp-for="DateOfBirth"></label>
+            <label class="form-control">@Model.DateOfBirth.ToString("dd/MM/yyyy")</label>
+        </div>
+        <div class="mb-3">
+            <label asp-for="BirthPlace"></label>
+            <label class="form-control">@Model.BirthPlace</label>
+        </div>
+        <a class="btn btn-secondary" role="button" asp-controller="Rookies" asp-action="Index">Back to list</a>
+        <a class="btn btn-danger" href="#" role="button" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">Delete</a>
+    </form>
+    <div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form asp-controller="Rookies" asp-action="DeleteAndRedirectToResultView" asp-route-index="@index"
+                        method="post" class="col-6 offset-3">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Information</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Are you sure?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Confirm</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>

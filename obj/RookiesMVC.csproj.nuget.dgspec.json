@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Nashtech\\RookiesMVC\\RookiesMVC.csproj": {}
+    "D:\\Nashtech\\RookiesMVC\\RookiesMVC.csproj": {}
   },
   "projects": {
-    "d:\\Nashtech\\RookiesMVC\\RookiesMVC.csproj": {
+    "D:\\Nashtech\\RookiesMVC\\RookiesMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Nashtech\\RookiesMVC\\RookiesMVC.csproj",
+        "projectUniqueName": "D:\\Nashtech\\RookiesMVC\\RookiesMVC.csproj",
         "projectName": "RookiesMVC",
-        "projectPath": "d:\\Nashtech\\RookiesMVC\\RookiesMVC.csproj",
+        "projectPath": "D:\\Nashtech\\RookiesMVC\\RookiesMVC.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "d:\\Nashtech\\RookiesMVC\\obj\\",
+        "outputPath": "D:\\Nashtech\\RookiesMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -8,37 +8,49 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RookiesMVC
 build_property.RootNamespace = RookiesMVC
-build_property.ProjectDir = d:\Nashtech\RookiesMVC\
+build_property.ProjectDir = D:\Nashtech\RookiesMVC\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = d:\Nashtech\RookiesMVC
+build_property.MSBuildProjectDirectory = D:\Nashtech\RookiesMVC
 build_property._RazorSourceGeneratorDebug = 
 
-[d:/Nashtech/RookiesMVC/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[D:/Nashtech/RookiesMVC/Views/Rookies/CreateNewPerson.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9va2llc1xDcmVhdGVOZXdQZXJzb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Nashtech/RookiesMVC/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[D:/Nashtech/RookiesMVC/Views/Rookies/DeleteResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9va2llc1xEZWxldGVSZXN1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Nashtech/RookiesMVC/Views/Shared/Error.cshtml]
+[D:/Nashtech/RookiesMVC/Views/Rookies/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9va2llc1xEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Nashtech/RookiesMVC/Views/Rookies/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9va2llc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Nashtech/RookiesMVC/Views/Rookies/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9va2llc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Nashtech/RookiesMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Nashtech/RookiesMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Nashtech/RookiesMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Nashtech/RookiesMVC/Views/_ViewImports.cshtml]
+[D:/Nashtech/RookiesMVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Nashtech/RookiesMVC/Views/_ViewStart.cshtml]
+[D:/Nashtech/RookiesMVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Nashtech/RookiesMVC/Views/Shared/_Layout.cshtml]
+[D:/Nashtech/RookiesMVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-gmz8od6980

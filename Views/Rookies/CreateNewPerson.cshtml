@@ -1,0 +1,45 @@
+@model PersonCreateModel
+@{
+    ViewData["Title"] = "Create new person";
+}
+
+<h1 class="display-4 text-center">Create new person</h1>
+<div>
+    <form asp-controller="Rookies" asp-action="CreateNewPerson" method="post" class="col-6 offset-3">
+        <div class="mb-3">
+            <label asp-for="FirstName"></label>
+            <input asp-for="FirstName" type=text class="form-control" placeholder="Your first name">
+            <span asp-validation-for="FirstName" class="form-text text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="LastName"></label>
+            <input asp-for="LastName" type=text class="form-control" placeholder="Your Last name">
+            <span asp-validation-for="LastName" class="form-text text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Gender"></label>
+            <select class="form-select" asp-for="Gender">
+                <option selected>Your answer</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label asp-for="DateOfBirth"></label>
+            <input asp-for="DateOfBirth" type=date class="form-control" placeholder="Your Date of Birth">
+            <span asp-validation-for="DateOfBirth" class="form-text text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Phone"></label>
+            <input asp-for="Phone" type=text class="form-control" placeholder="Your Phone">
+            <span asp-validation-for="Phone" class="form-text text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="BirthPlace"></label>
+            <input asp-for="BirthPlace" type=text class="form-control" placeholder="Your Place">
+            <span asp-validation-for="BirthPlace" class="form-text text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div>
