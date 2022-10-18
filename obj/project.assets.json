@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\training\\RookiesMVC\\RookiesMVC.csproj",
+      "projectUniqueName": "d:\\Nashtech\\RookiesMVC\\RookiesMVC.csproj",
       "projectName": "RookiesMVC",
-      "projectPath": "D:\\training\\RookiesMVC\\RookiesMVC.csproj",
+      "projectPath": "d:\\Nashtech\\RookiesMVC\\RookiesMVC.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\training\\RookiesMVC\\obj\\",
+      "outputPath": "d:\\Nashtech\\RookiesMVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
